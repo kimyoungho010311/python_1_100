@@ -1,0 +1,2 @@
+
+        scoreboard.l_point()
