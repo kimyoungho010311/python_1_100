@@ -1,5 +1,9 @@
 # python_1_100
-100 Projects using python
+I have created various projects using Python.
+
+
+Below are the priject names and their descriptions.
+I hope you were interested.
 
 ## advanced_snake_game
 Possible to save high score use file dorection 
