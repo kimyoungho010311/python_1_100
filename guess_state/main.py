@@ -28,14 +28,15 @@ while keep_going:
 
     answer_state = screen.textinput(title=f'{score}/50 Guess the State', prompt="What's another state's name?").title()
     if answer_state == 'Exit':
-        missing_state = []
-        for state in all_states:
-            if state not in correct_answer:
-                missing_state.append(state)
-            
+        # missing_state = []
+        # for state in all_states:
+        #     if state not in correct_answer:
+        #         missing_state.append(state)
+        missing_state = [ state for state in all_states if state not in correct_answer]
         new_data = pd.DataFrame(missing_state)
         new_data.to_csv('states_to_learn.csv')
         break
+
     if answer_state in states.values:
         x = data.loc[data["state"] == answer_state, 'x'].values[0]
         y = data.loc[data["state"] == answer_state, 'y'].values[0]
