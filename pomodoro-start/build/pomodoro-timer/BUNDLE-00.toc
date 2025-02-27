@@ -1,0 +1,3 @@
+([('pomodoro-timer',
+   '/Users/kim-youngho/Desktop/python_1_100/pomodoro-start/dist/pomodoro-timer',
+   'EXECUTABLE')],)
